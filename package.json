@@ -1,26 +1,40 @@
 {
-  "name": "test-koala-testing",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "name": "test-koala3",
+  "version": "1.0.0",
+  "description": "This is the React Plugin for Apache OODT File Manager",
+  "main": "dist/build.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/leeyongl5263/koalaTest2.git"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build-examples": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
+  "keywords": [
+    "react",
+    "components",
+    "File Manager"
+  ],
+  "author": "Nadeeshan Gimhana",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^9.1.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.4.0",
-    "rimraf": "^3.0.2"
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "prettier": "1.18.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^4.2.0",
+    "axios": "^0.18.0",
+    "clsx": "^1.0.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "prop-types": "latest"
   }
 }
