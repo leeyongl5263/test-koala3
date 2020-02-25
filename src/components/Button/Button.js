@@ -162,8 +162,12 @@ const styledButton = styled.button`
 //     </div>
 //   }
 // }
-function Button({ props }) {
-  console.log(props);
+
+// function Button() {
+
+// }
+function Button() {
+  console.log(this.props);
   return (
     <button>Test</button>  
   );
