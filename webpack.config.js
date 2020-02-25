@@ -15,7 +15,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist/'),
         publicPath: '',
-        filename: 'build.js',
+        filename: 'index.js',
         libraryTarget: 'umd'
     }
 };
