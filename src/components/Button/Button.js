@@ -26,11 +26,17 @@ const styledButton = styled.button`
 //   text-align: center;
 // `
 
-export default class Button extends React.Component {
+// export default class Button extends React.Component {
   
-  render() {
-    <div>
-    <button> test </button>
-    </div>
-  }
+//   render() {
+//     <div>
+//     <button> test </button>
+//     </div>
+//   }
+// }
+function Button() {
+  return (
+    <button> Test </button>
+  );
 }
+export default Button
