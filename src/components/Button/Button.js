@@ -36,7 +36,7 @@ const styledButton = styled.button`
 // }
 function Button() {
   return (
-    <button> Test </button>
+    <styledButton> Test</styledButton>
   );
 }
 export default Button
