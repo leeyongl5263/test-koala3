@@ -162,7 +162,8 @@ export default class Button extends React.Component {
   render() {
     return (
     <div>
-      <button> {this.props.children} </button>
+      <styledButton>{this.props.children}</styledButton>
+      {/* <button> {this.props.children} </button> */}
     </div>);
   }
 }
