@@ -10,15 +10,7 @@ _Object$defineProperty(exports, "__esModule", {
 
 exports["default"] = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/classCallCheck"));
-
-var _createClass2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/createClass"));
-
-var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/possibleConstructorReturn"));
-
-var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/getPrototypeOf"));
-
-var _inherits2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/inherits"));
+var _extends2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/extends"));
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/taggedTemplateLiteral"));
 
@@ -165,28 +157,26 @@ var StyledButton = _styledComponents["default"].button.withConfig({
   return props.primary && css(_templateObject());
 });
 
-var Button =
-/*#__PURE__*/
-function (_React$Component) {
-  (0, _inherits2["default"])(Button, _React$Component);
+var Button = _react["default"].forwardRef(function (props, ref) {
+  return _react["default"].createElement(StyledButton, (0, _extends2["default"])({
+    ref: ref
+  }, props), props.children);
+});
 
-  function Button(props) {
-    var _this;
-
-    (0, _classCallCheck2["default"])(this, Button);
-    _this = (0, _possibleConstructorReturn2["default"])(this, (0, _getPrototypeOf2["default"])(Button).call(this, props));
-    console.log("Props:", props);
-    return _this;
-  }
-
-  (0, _createClass2["default"])(Button, [{
-    key: "render",
-    value: function render() {
-      return _react["default"].createElement("div", null, _react["default"].createElement(StyledButton, null, this.props.children));
-    }
-  }]);
-  return Button;
-}(_react["default"].Component); // function Button() {
+var _default = Button; // export default class Button extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     console.log("Props:", props);
+//   }
+//   render() {
+//     return (
+//     <div>
+//       <StyledButton>{this.props.children}</StyledButton>
+//       {/* <button> {this.props.children} </button> */}
+//     </div>);
+//   }
+// }
+// function Button() {
 // }
 // function Button() {
 //   return (
@@ -199,5 +189,4 @@ function (_React$Component) {
 // // }
 // export default Button
 
-
-exports["default"] = Button;
+exports["default"] = _default;

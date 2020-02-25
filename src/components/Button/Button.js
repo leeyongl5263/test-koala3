@@ -151,19 +151,31 @@ const StyledButton = styled.button`
   `}
 `;
 
-export default class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log("Props:", props);
-  }
-  render() {
-    return (
-    <div>
-      <StyledButton>{this.props.children}</StyledButton>
-      {/* <button> {this.props.children} </button> */}
-    </div>);
-  }
-}
+
+const Button = React.forwardRef((props, ref) => {
+  
+  return (
+    <StyledButton ref={ref} {...props} >
+      {props.children}
+    </StyledButton>
+  );
+});
+
+export default Button;
+
+// export default class Button extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     console.log("Props:", props);
+//   }
+//   render() {
+//     return (
+//     <div>
+//       <StyledButton>{this.props.children}</StyledButton>
+//       {/* <button> {this.props.children} </button> */}
+//     </div>);
+//   }
+// }
 
 // function Button() {
 
