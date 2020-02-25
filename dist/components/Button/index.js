@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
-
 var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
 
 _Object$defineProperty(exports, "__esModule", {
@@ -10,7 +8,7 @@ _Object$defineProperty(exports, "__esModule", {
 
 exports["default"] = void 0;
 
-var _Button = _interopRequireDefault(require("./Button"));
+var _Button = require("./Button");
 
-var _default = _Button["default"];
+var _default = _Button.Button;
 exports["default"] = _default;
