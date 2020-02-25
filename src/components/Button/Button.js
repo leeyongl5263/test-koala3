@@ -25,4 +25,4 @@ const Button = styled.button`
 // const Container = styled.div`
 //   text-align: center;
 // `
-export { Button }
+export default Button
