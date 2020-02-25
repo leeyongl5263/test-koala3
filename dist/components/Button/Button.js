@@ -10,11 +10,11 @@ _Object$defineProperty(exports, "__esModule", {
 
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/extends"));
-
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/taggedTemplateLiteral"));
 
 var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
@@ -150,18 +150,19 @@ function _templateObject() {
 //   </div>
 // );
 // export default Button;
-var StyledButton = _styledComponents["default"].button.withConfig({
-  displayName: "Button__StyledButton",
+var Button = _styledComponents["default"].button.withConfig({
+  displayName: "Button",
   componentId: "gdhhuq-0"
 })(["background-color:white;border-radius:3px;border:2px solid palevioletred;color:palevioletred;margin:0.5em 1em;padding:0.25em 1em;", ""], function (props) {
   return props.primary && css(_templateObject());
-});
+}); // const Button = React.forwardRef((props, ref) => {
+//   return (
+//     <StyledButton ref={ref} {...props} >
+//       {props.children}
+//     </StyledButton>
+//   );
+// });
 
-var Button = _react["default"].forwardRef(function (props, ref) {
-  return _react["default"].createElement(StyledButton, (0, _extends2["default"])({
-    ref: ref
-  }, props), props.children);
-});
 
 var _default = Button; // export default class Button extends React.Component {
 //   constructor(props) {

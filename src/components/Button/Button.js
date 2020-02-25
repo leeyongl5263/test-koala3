@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
 // import tokens from '../Sharable/tokens';
@@ -138,7 +139,7 @@ import styled from 'styled-components';
 
 // export default Button;
 
-const StyledButton = styled.button`
+const Button = styled.button`
   background-color: white;
   border-radius: 3px;
   border: 2px solid palevioletred;
@@ -152,14 +153,14 @@ const StyledButton = styled.button`
 `;
 
 
-const Button = React.forwardRef((props, ref) => {
+// const Button = React.forwardRef((props, ref) => {
   
-  return (
-    <StyledButton ref={ref} {...props} >
-      {props.children}
-    </StyledButton>
-  );
-});
+//   return (
+//     <StyledButton ref={ref} {...props} >
+//       {props.children}
+//     </StyledButton>
+//   );
+// });
 
 export default Button;
 
