@@ -33,8 +33,9 @@
     "@material-ui/icons": "^4.2.0",
     "axios": "^0.18.0",
     "clsx": "^1.0.4",
+    "prop-types": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "prop-types": "latest"
+    "styled-components": "^5.0.1"
   }
 }
