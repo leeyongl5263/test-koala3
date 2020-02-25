@@ -167,9 +167,8 @@ const styledButton = styled.button`
 
 // }
 function Button() {
-  console.log(this.props);
   return (
-    <button>Test</button>  
+    <styledButton>Test</styledButton>  
   );
 }
 
