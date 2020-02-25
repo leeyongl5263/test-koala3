@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tokens from '../Sharable/tokens';
+import tokens from '@ensightful/tokens';
 
 const disabledStyles = `
   box-shadow: none;
@@ -94,6 +94,7 @@ const ButtonWithStyle = styled.button`
   ${props => (props.disabled ? disabledStyles : "")}
   ${props => (props.kind == "nostyle" ? noStyle : "")}
   ${props => sizeStyles(props)}
+
 `;
 
 export default ButtonWithStyle;
