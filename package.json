@@ -2,7 +2,7 @@
   "name": "test-koala3",
   "version": "0.1.50",
   "description": "This is the React Plugin for Apache OODT File Manager",
-  "main": "dist/index.js",
+  "main": "dist/build.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/leeyongl5263/koalaTest2.git"
