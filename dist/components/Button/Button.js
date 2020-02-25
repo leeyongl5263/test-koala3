@@ -13,17 +13,23 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: palevioletred;\n    color: white;\n  "]);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-  _templateObject = function _templateObject() {
-    return data;
-  };
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  return data;
-}
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 // import tokens from '../Sharable/tokens';
 // import PropTypes from "prop-types";
@@ -147,34 +153,50 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 //   </div>
 // );
 // export default Button;
-var Button = _styledComponents["default"].button.withConfig({
-  displayName: "Button",
-  componentId: "gdhhuq-0"
-})(["background-color:white;border-radius:3px;border:2px solid palevioletred;color:palevioletred;margin:0.5em 1em;padding:0.25em 1em;", ""], function (props) {
-  return props.primary && css(_templateObject());
-}); // const Button = React.forwardRef((props, ref) => {
+// const Button = styled.button`
+//   background-color: white;
+//   border-radius: 3px;
+//   border: 2px solid palevioletred;
+//   color: palevioletred;
+//   margin: 0.5em 1em;
+//   padding: 0.25em 1em;
+//   ${props => props.primary && css`
+//     background: palevioletred;
+//     color: white;
+//   `}
+// `;
+// const Button = React.forwardRef((props, ref) => {
 //   return (
 //     <StyledButton ref={ref} {...props} >
 //       {props.children}
 //     </StyledButton>
 //   );
 // });
+// export default Button;
+var Button =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Button, _React$Component);
 
+  function Button(props) {
+    var _this;
 
-var _default = Button; // export default class Button extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     console.log("Props:", props);
-//   }
-//   render() {
-//     return (
-//     <div>
-//       <StyledButton>{this.props.children}</StyledButton>
-//       {/* <button> {this.props.children} </button> */}
-//     </div>);
-//   }
-// }
-// function Button() {
+    _classCallCheck(this, Button);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Button).call(this, props));
+    console.log("Props:", props);
+    return _this;
+  }
+
+  _createClass(Button, [{
+    key: "render",
+    value: function render() {
+      return _react["default"].createElement("div", null, _react["default"].createElement("button", null, " ", this.props.children, " "));
+    }
+  }]);
+
+  return Button;
+}(_react["default"].Component); // function Button() {
 // }
 // function Button() {
 //   return (
@@ -187,4 +209,5 @@ var _default = Button; // export default class Button extends React.Component {
 // // }
 // export default Button
 
-exports["default"] = _default;
+
+exports["default"] = Button;

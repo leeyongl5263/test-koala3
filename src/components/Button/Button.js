@@ -139,18 +139,18 @@ import styled from 'styled-components';
 
 // export default Button;
 
-const Button = styled.button`
-  background-color: white;
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0.5em 1em;
-  padding: 0.25em 1em;
-  ${props => props.primary && css`
-    background: palevioletred;
-    color: white;
-  `}
-`;
+// const Button = styled.button`
+//   background-color: white;
+//   border-radius: 3px;
+//   border: 2px solid palevioletred;
+//   color: palevioletred;
+//   margin: 0.5em 1em;
+//   padding: 0.25em 1em;
+//   ${props => props.primary && css`
+//     background: palevioletred;
+//     color: white;
+//   `}
+// `;
 
 
 // const Button = React.forwardRef((props, ref) => {
@@ -162,21 +162,21 @@ const Button = styled.button`
 //   );
 // });
 
-export default Button;
+// export default Button;
 
-// export default class Button extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     console.log("Props:", props);
-//   }
-//   render() {
-//     return (
-//     <div>
-//       <StyledButton>{this.props.children}</StyledButton>
-//       {/* <button> {this.props.children} </button> */}
-//     </div>);
-//   }
-// }
+export default class Button extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log("Props:", props);
+  }
+  render() {
+    return (
+    <div>
+      {/* <StyledButton>{this.props.children}</StyledButton> */}
+      <button> {this.props.children} </button>
+    </div>);
+  }
+}
 
 // function Button() {
 
