@@ -27,7 +27,8 @@
     "babel-plugin-styled-components": "^1.10.7",
     "prettier": "1.18.2",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "styled-components": "^5.0.1"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.3",
