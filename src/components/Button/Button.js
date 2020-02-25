@@ -154,27 +154,27 @@ const styledButton = styled.button`
 //   text-align: center;
 // `
 
-// export default class Button extends React.Component {
+export default class Button extends React.Component {
   
-//   render() {
-//     <div>
-//     <button> test </button>
-//     </div>
-//   }
-// }
+  render() {
+    <div>
+    <button> test </button>
+    </div>
+  }
+}
 
 // function Button() {
 
 // }
-function Button() {
-  return (
-    <styledButton>Test</styledButton>  
-  );
-}
-
-// const Button = ({ props }) => {
-//   console.log("Props:",props);
-//   return <StyleButton> { props }</StyleButton>
+// function Button() {
+//   return (
+//     <styledButton>Test</styledButton>  
+//   );
 // }
 
-export default Button
+// // const Button = ({ props }) => {
+// //   console.log("Props:",props);
+// //   return <StyleButton> { props }</StyleButton>
+// // }
+
+// export default Button
