@@ -155,7 +155,9 @@ const styledButton = styled.button`
 // `
 
 export default class Button extends React.Component {
-  
+  constructor(props) {
+    console.log("Props:", props);
+  }
   render() {
     return (
     <div>
