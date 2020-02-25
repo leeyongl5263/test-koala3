@@ -19,7 +19,7 @@ module.exports = function BabelConfigJS(api) {
             {
                 loose: true,
             },
-        ],
+        ], 
     ];
 
     return {
