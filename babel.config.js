@@ -4,22 +4,10 @@ module.exports = function BabelConfigJS(api) {
     const presets = ["@babel/preset-env", "@babel/preset-react"];
 
     const plugins = [
-        "styled-components",
-        [
-            "@babel/plugin-transform-runtime",
-            {
-                corejs: 2,
-                helpers: true,
-                regenerator: true,
-                useESModules: false,
-            },
-        ],
-        [
-            "@babel/plugin-proposal-class-properties",
-            {
-                loose: true,
-            },
-        ], 
+        '@babel/plugin-transform-object-assign',
+        '@babel/plugin-proposal-class-properties',
+        '@babel/proposal-object-rest-spread',
+        'babel-plugin-styled-components'
     ];
 
     return {

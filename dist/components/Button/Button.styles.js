@@ -1,18 +1,15 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
-
-var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 exports["default"] = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _tokens = _interopRequireDefault(require("@ensightful/tokens"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var disabledStyles = "\n  box-shadow: none;\n  color: grey;\n  text-decoration: none;\n  text-shadow: none;\n  background-color:".concat(_tokens["default"].color.blackLighten70, ";\n  pointer-events:none;\n\n  &:focus {\n    box-shadow: none;\n    text-shadow: none;\n    transform: none;\n  }\n");
 var noStyle = "\n  background-color:none;\n  border:none;\n  color:".concat(_tokens["default"].color.brandPurple, ";\n");

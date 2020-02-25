@@ -1,18 +1,13 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
-
-var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 exports["default"] = void 0;
 
-var _defineProperty2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/defineProperty"));
-
 var _color;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var tokens = {
   color: (_color = {
@@ -29,7 +24,7 @@ var tokens = {
     blackDisabled: "#F4F5F7",
     greyLighten90: "#F8F9FB",
     greyLighten80: "#F4F4F4"
-  }, (0, _defineProperty2["default"])(_color, "greyLighten80", "#F4F5F7"), (0, _defineProperty2["default"])(_color, "white", "#FFFFFF"), (0, _defineProperty2["default"])(_color, "skyblue", "#33A9F5"), (0, _defineProperty2["default"])(_color, "yellow", "#FFBA53"), (0, _defineProperty2["default"])(_color, "yellowLighten80", "#FFF0DA"), (0, _defineProperty2["default"])(_color, "purple", "#8F7EE5"), (0, _defineProperty2["default"])(_color, "purpleLighten70", "#E0DBFF"), (0, _defineProperty2["default"])(_color, "purpleLighten20", "#937FFF"), (0, _defineProperty2["default"])(_color, "darkBlue", "#5353F0"), (0, _defineProperty2["default"])(_color, "uiAction", "#0068FF"), (0, _defineProperty2["default"])(_color, "brandGreen", "#4DD87A"), (0, _defineProperty2["default"])(_color, "brandOrange", "#FF9A21"), (0, _defineProperty2["default"])(_color, "brandOrangeLighten70", "#E7CEC5"), (0, _defineProperty2["default"])(_color, "brandBlue", "#6347FF"), (0, _defineProperty2["default"])(_color, "brandPurple", "#9E35EB"), (0, _defineProperty2["default"])(_color, "brandRed", "#F8591E"), _color),
+  }, _defineProperty(_color, "greyLighten80", "#F4F5F7"), _defineProperty(_color, "white", "#FFFFFF"), _defineProperty(_color, "skyblue", "#33A9F5"), _defineProperty(_color, "yellow", "#FFBA53"), _defineProperty(_color, "yellowLighten80", "#FFF0DA"), _defineProperty(_color, "purple", "#8F7EE5"), _defineProperty(_color, "purpleLighten70", "#E0DBFF"), _defineProperty(_color, "purpleLighten20", "#937FFF"), _defineProperty(_color, "darkBlue", "#5353F0"), _defineProperty(_color, "uiAction", "#0068FF"), _defineProperty(_color, "brandGreen", "#4DD87A"), _defineProperty(_color, "brandOrange", "#FF9A21"), _defineProperty(_color, "brandOrangeLighten70", "#E7CEC5"), _defineProperty(_color, "brandBlue", "#6347FF"), _defineProperty(_color, "brandPurple", "#9E35EB"), _defineProperty(_color, "brandRed", "#F8591E"), _color),
   space: "8px",
   spaceSm: "4px",
   spaceLg: "12px",

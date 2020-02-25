@@ -1,16 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
-
-var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
-
-_Object$defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 exports["default"] = void 0;
-
-var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/taggedTemplateLiteral"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -18,8 +11,10 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    background: palevioletred;\n    color: white;\n  "]);
+  var data = _taggedTemplateLiteral(["\n    background: palevioletred;\n    color: white;\n  "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -27,6 +22,8 @@ function _templateObject() {
 
   return data;
 }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 // import tokens from '../Sharable/tokens';
 // import PropTypes from "prop-types";
