@@ -138,7 +138,7 @@ import styled from 'styled-components';
 
 // export default Button;
 
-const styledButton = styled.button`
+export const styledButton = styled.button`
   background-color: white;
   border-radius: 3px;
   border: 2px solid palevioletred;
