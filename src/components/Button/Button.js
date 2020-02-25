@@ -138,7 +138,7 @@ import styled from 'styled-components';
 
 // export default Button;
 
-export const styledButton = styled.button`
+export const StyledButton = styled.button`
   background-color: white;
   border-radius: 3px;
   border: 2px solid palevioletred;
@@ -162,7 +162,7 @@ export default class Button extends React.Component {
   render() {
     return (
     <div>
-      <styledButton>{this.props.children}</styledButton>
+      <StyledButton>{this.props.children}</StyledButton>
       {/* <button> {this.props.children} </button> */}
     </div>);
   }
