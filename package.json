@@ -1,6 +1,6 @@
 {
   "name": "test-koala3",
-  "version": "0.1.41",
+  "version": "0.1.42",
   "description": "This is the React Plugin for Apache OODT File Manager",
   "main": "dist/build.js",
   "repository": {
