@@ -138,7 +138,7 @@ import styled from 'styled-components';
 
 // export default Button;
 
-const Button = styled.button`
+const styledButton = styled.button`
   background-color: white;
   border-radius: 3px;
   border: 2px solid palevioletred;
@@ -162,11 +162,12 @@ const Button = styled.button`
 //     </div>
 //   }
 // }
-// function Button() {
-//   return (
-//     <styledButton primary> Test </styledButton>
-//   );
-// }
+function Button({ props }) {
+  console.log(props);
+  return (
+    <button>Test</button>  
+  );
+}
 
 // const Button = ({ props }) => {
 //   console.log("Props:",props);
