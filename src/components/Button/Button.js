@@ -29,7 +29,7 @@ const styledButton = styled.button`
 class Button extends React.Component {
   
   render() {
-    <styledButton> test </styledButton>
+    <button> test </button>
   }
 }
 export default Button
