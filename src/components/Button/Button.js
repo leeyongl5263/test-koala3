@@ -138,7 +138,7 @@ import styled from 'styled-components';
 
 // export default Button;
 
-export const StyledButton = styled.button`
+const StyledButton = styled.button`
   background-color: white;
   border-radius: 3px;
   border: 2px solid palevioletred;
@@ -150,9 +150,6 @@ export const StyledButton = styled.button`
     color: white;
   `}
 `;
-// const Container = styled.div`
-//   text-align: center;
-// `
 
 export default class Button extends React.Component {
   constructor(props) {

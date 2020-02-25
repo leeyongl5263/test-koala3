@@ -8,7 +8,7 @@ _Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports["default"] = exports.StyledButton = void 0;
+exports["default"] = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/classCallCheck"));
 
@@ -163,12 +163,7 @@ var StyledButton = _styledComponents["default"].button.withConfig({
   componentId: "gdhhuq-0"
 })(["background-color:white;border-radius:3px;border:2px solid palevioletred;color:palevioletred;margin:0.5em 1em;padding:0.25em 1em;", ""], function (props) {
   return props.primary && css(_templateObject());
-}); // const Container = styled.div`
-//   text-align: center;
-// `
-
-
-exports.StyledButton = StyledButton;
+});
 
 var Button =
 /*#__PURE__*/
