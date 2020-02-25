@@ -169,6 +169,7 @@ const styleButton = styled.button`
 // }
 
 const Button = ({ props }) => {
+  console.log("Props:",props);
   return <styleButton> { props }</styleButton>
 }
 
