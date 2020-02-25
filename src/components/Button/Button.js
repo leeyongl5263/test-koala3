@@ -26,10 +26,11 @@ const styledButton = styled.button`
 //   text-align: center;
 // `
 
-class Button extends React.Component {
+export default class Button extends React.Component {
   
   render() {
+    <div>
     <button> test </button>
+    </div>
   }
 }
-export default Button
