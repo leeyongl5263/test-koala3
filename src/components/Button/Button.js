@@ -139,7 +139,7 @@ import styled from 'styled-components';
 // export default Button;
 
 const styledButton = styled.button`
-  background: white;
+  background-color: white;
   border-radius: 3px;
   border: 2px solid palevioletred;
   color: palevioletred;
