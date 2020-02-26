@@ -2,7 +2,7 @@
   "name": "test-koala3",
   "version": "0.1.56",
   "description": "This is the React Plugin for Apache OODT File Manager",
-  "main": "dist/build.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/leeyongl5263/test-koala3.git"
@@ -31,7 +31,13 @@
     "prettier": "1.18.2",
     "styled-components": "^5.0.1",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "react":"^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "peerDependencies":{
+    "react":"^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "dependencies": {
     "@babel/plugin-transform-object-assign": "^7.8.3",
